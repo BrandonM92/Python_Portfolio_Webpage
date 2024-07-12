@@ -1,5 +1,6 @@
 title;description;url;image
-Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://pythonhow.com;1.png
+Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://github.com/BrandonM92/to_do_list_python;1.png
+File Compressor; A program that will take selected files and compress them into a zip file (Made using FreeSimpleGUI).;https://github.com/BrandonM92/Python_Compress_Files;21.png
 Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://pythonhow.com;2.png
 PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://pythonhow.com;3.png
 PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;https://pythonhow.com;4.png
