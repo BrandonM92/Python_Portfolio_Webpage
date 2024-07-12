@@ -1,16 +1,17 @@
 import streamlit as st
+import pandas as pd
 
 # Define the layout with two columns
 col1, col2 = st.columns([1, 3])  # Adjust the widths as needed
 
 # Column 1: Display an image
 with col1:
-    """This code block is where you put content in the left side column"""
+    # This code block is where you put content on the left side column
     st.image(image="images/photo.png", caption="Programmer", use_column_width=True)
 
-# Column 2: Display information about Brandon Matthews
+# Column 2: Display information about Brandon Mathews
 with col2:
-    """This code block is where you put content in the right side column"""
+    # This code block is where you put content on the right side column"""
     st.title("Brandon Mathews")
     content = """
     I'm Brandon, an Aspiring IT professional with a focus on Python and Application Development. 
@@ -32,3 +33,16 @@ contact_message = """
     If you wish to contact me, all contact information can be found on the contact page. 
 """
 st.markdown(contact_message)
+
+col3, col4 = st.columns(2)
+
+df = pd.read_csv("data.csv", sep=";")
+
+with col3:
+    for index,row in df[:10].iterrows():
+        st.header(row["title"])
+
+with col4:
+    for index,row in df[10:].iterrows():
+        st.header(row["title"])
+
